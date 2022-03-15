@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat";
+}
+
+section{
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0px 0px 20px #00000010;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.input-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+}
+
+.container span{
+    color: red;
+}
+
+.container h4{
+    text-align: center;
+    margin: 8px auto;
+    cursor: default;
+}
+
+button[type="button"]{
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    color: rgb(27, 166, 247);
+    cursor: pointer;
+    margin: 10px auto;
+    transition: .3s ease background-color;
+}
+
+button[type="button"]:hover{
+    background-color: rgb(179, 195, 207);
+}
+
+#title{
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(0, 110, 255);
+    width: 100%;
+    padding: 20px;
+    cursor: default;
+}

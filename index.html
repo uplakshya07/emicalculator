@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div id="title">EMI CALCULATOR</div>
+            <hr>
+            <h4>Required Fields are denoted by <span>*</span></h4>
+            <hr>
+            <form action="">
+                <div class="input-group">
+                    <label for="cost">Total Loan Amount <span>*</span></label>
+                    <input type="number" id="cost" onchange="calcEmi()">
+                </div>
+                <div class="input-group">
+                    <label for="intRate">Interest Rate (%) <span>*</span></label>
+                    <input type="number" id="intRate" onchange="calcEmi()">
+                </div>
+                <div class="input-group">
+                    <label for="tiy">Terms in Year(s) <span>*</span></label>
+                    <input type="number" id="tiy" onchange="calcEmi()">
+                </div>
+                <div class="input-group">
+                    <label for="dpr">Down Payment (%)</label>
+                    <input type="number" id="dpr" onchange="changeDownPayment(); calcEmi();">
+                </div>
+                <div class="input-group">
+                    <label for="downPayment">Down Payment Amt.</label>
+                    <input type="number" id="downPayment" onchange="changeDownPaymentRate(); calcEmi();">
+                </div>
+                <div class="input-group">
+                    <label for="loanAmount">Loan Amount to be Paid</label>
+                    <input type="number" id="loanAmount" readonly onchange="calcEmi()">
+                </div>
+                <div class="input-group">
+                    <label for="emi" style="color: rgb(8, 28, 117); font-weight: bold;">EMI</label>
+                    <input type="number" id="emi" readonly>
+                </div>
+
+                <button type="button" onclick="calcEmi()">Calculate</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+<script src="app.js"></script>
+</html>
