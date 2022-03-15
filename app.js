@@ -18,6 +18,8 @@ function calcEmi() {
   let cost = document.getElementById("cost").value;
   let intRate = document.getElementById("intRate").value;
   let tiy = document.getElementById("tiy").value;
+  changeDownPayment();
+  changeDownPaymentRate();
   let downPayment = document.getElementById("downPayment").value;
   document.getElementById("loanAmount").value = cost - downPayment;
   let loanAmount = document.getElementById("loanAmount").value;
